@@ -1,4 +1,51 @@
 title: "Developmental Social Neuroscience Lab"
 description: "Understanding how infants learn about people, from people, and about their environment"
-theme: jekyll-theme-cayman
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+plugins:
+  - jekyll-include-cache
+
+# Markdown and Permalinks
 markdown: kramdown
+permalink: /:categories/:title/
+paginate_path: /page:num/
+
+# Navigation Bar
+nav:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "Methods"
+    url: /methods/
+  - title: "People"
+    url: /people/
+  - title: "Publications"
+    url: /publications/
+  - title: "Join"
+    url: /join/
+
+# Author Info (optional)
+author:
+  name: "Dr. Elena Geangu"
+  avatar: "/assets/images/elena.jpg" # optional
+  bio: "Developmental social neuroscientist studying how infants learn about people and their environments."
+  location: "University of York"
+  links:
+    - label: "Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.co.uk/citations?user=xj3vongAAAAJ"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/elenageangu"
+
+# Footer Links
+footer:
+  - label: "Contact"
+    url: /join/
+  - label: "Publications"
+    url: /publications/
+  - label: "GitHub"
+    url: "https://github.com/elenageangu"
