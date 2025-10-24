@@ -3,12 +3,12 @@ description: "Understanding how infants learn about people, from people, and abo
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"
 
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
-# Force Jekyll to include the theme
 markdown: kramdown
 exclude:
   - Gemfile
@@ -20,10 +20,7 @@ exclude:
 url: "https://elenageangu.github.io"
 baseurl: "/developmentalsocialneurosciencelab"
 
-# Enable the theme's skin (color style)
-minimal_mistakes_skin: "default"
-
-# Navigation Bar
+# Navigation bar
 nav:
   - title: "Home"
     url: /
@@ -38,12 +35,12 @@ nav:
   - title: "Join"
     url: /join/
 
-# Author Info (optional)
+# Author info
 author:
   name: "Dr. Elena Geangu"
-  avatar: "/assets/images/elena.jpg" # optional
   bio: "Developmental social neuroscientist studying how infants learn about people and their environments."
   location: "University of York"
+  avatar: "/assets/images/elena.jpg"
   links:
     - label: "Scholar"
       icon: "fas fa-graduation-cap"
@@ -52,7 +49,7 @@ author:
       icon: "fab fa-github"
       url: "https://github.com/elenageangu"
 
-# Footer Links
+# Footer
 footer:
   - label: "Contact"
     url: /join/
@@ -60,9 +57,8 @@ footer:
     url: /publications/
   - label: "GitHub"
     url: "https://github.com/elenageangu"
-# rebuild trigger
 
-# Default settings for all pages
+# Default settings for pages
 defaults:
   - scope:
       path: ""
@@ -72,4 +68,5 @@ defaults:
       sidebar:
         nav: "main"
 
-
+# Rebuild trigger (forces GitHub Pages to refresh)
+rebuild_trigger: 3
