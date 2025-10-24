@@ -53,3 +53,14 @@ footer:
     url: "https://github.com/elenageangu"
 # rebuild trigger
 
+# Default settings for all pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+
+
