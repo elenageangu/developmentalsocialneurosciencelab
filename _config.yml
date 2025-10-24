@@ -1,9 +1,11 @@
 title: "Developmental Social Neuroscience Lab"
 description: "Understanding how infants learn about people, from people, and about their environment"
 
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+# Theme
+theme: "minimal-mistakes-jekyll"  # 👈 change this line
 plugins:
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 # IMPORTANT for project sites
 url: "https://elenageangu.github.io"          # no trailing slash
