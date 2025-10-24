@@ -1,11 +1,13 @@
 title: "Developmental Social Neuroscience Lab"
 description: "Understanding how infants learn about people, from people, and about their environment"
 
-# Theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-
 plugins:
   - jekyll-include-cache
+
+# IMPORTANT for project sites
+url: "https://elenageangu.github.io"          # no trailing slash
+baseurl: "/developmentalsocialneurosciencelab" # repo name, starts with a slash
 
 # Markdown and Permalinks
 markdown: kramdown
