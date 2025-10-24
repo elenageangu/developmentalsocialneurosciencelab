@@ -31,15 +31,11 @@ jobs:
         run: |
           gem install bundler
           bundle install
+          bundle add webrick
 
-      - name: Verify and build site with Jekyll
+      - name: Build site with Jekyll
         run: |
-          echo "🔍 Checking installed gems..."
-          bundle info minimal-mistakes-jekyll || echo "⚠️ Minimal Mistakes gem not found!"
-          echo "🧪 Running Jekyll Doctor..."
-          bundle exec jekyll doctor
-          echo "🏗️ Building site..."
-          bundle exec jekyll build
+          bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
 
