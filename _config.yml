@@ -2,19 +2,26 @@ title: "Developmental Social Neuroscience Lab"
 description: "Understanding how infants learn about people, from people, and about their environment"
 
 # Theme
-theme: "minimal-mistakes-jekyll"  # 👈 change this line
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
 plugins:
-  - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-include-cache
 
-# IMPORTANT for project sites
-url: "https://elenageangu.github.io"          # no trailing slash
-baseurl: "/developmentalsocialneurosciencelab" # repo name, starts with a slash
-
-# Markdown and Permalinks
+# Force Jekyll to include the theme
 markdown: kramdown
-permalink: /:categories/:title/
-paginate_path: /page:num/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Site URL configuration
+url: "https://elenageangu.github.io"
+baseurl: "/developmentalsocialneurosciencelab"
+
+# Enable the theme's skin (color style)
+minimal_mistakes_skin: "default"
 
 # Navigation Bar
 nav:
