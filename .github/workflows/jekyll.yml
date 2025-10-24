@@ -32,11 +32,17 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Build site with Jekyll
-        run: |
-          bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
+      - name: Verify and build site with Jekyll
+  run: |
+    echo "🔍 Checking installed gems..."
+    bundle info minimal-mistakes-jekyll || echo "⚠️ Minimal Mistakes gem not found!"
+    echo "🧪 Running Jekyll Doctor..."
+    bundle exec jekyll doctor
+    echo "🏗️ Building site..."
+    bundle exec jekyll build
+  env:
+    JEKYLL_ENV: production
+
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
