@@ -2,8 +2,9 @@
 layout: home
 title: "Developmental Social Neuroscience Lab (DSN Lab)"
 subtitle: "Understanding how infants learn about people, from people, and about their environment"
-description: "We study how infants learn about people, from people, and about their environment — combining behavioural, physiological, and wearable approaches to understand emotional and social development in real-world and laboratory contexts."
+author_profile: false
 ---
+
 
 <section id="hero" class="text-center">
   <h1>How do infants learn about people, from people, and about their environment?</h1>
