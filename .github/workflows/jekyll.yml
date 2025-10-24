@@ -33,14 +33,15 @@ jobs:
           bundle install
 
       - name: Build site with Jekyll
-        run: bundle exec jekyll build
+        run: |
+          bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: _site  # ✅ explicitly upload the built folder
 
   deploy:
     runs-on: ubuntu-latest
