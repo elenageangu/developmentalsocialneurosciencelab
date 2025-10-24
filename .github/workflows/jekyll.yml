@@ -33,21 +33,20 @@ jobs:
           bundle install
 
       - name: Verify and build site with Jekyll
-  run: |
-    echo "🔍 Checking installed gems..."
-    bundle info minimal-mistakes-jekyll || echo "⚠️ Minimal Mistakes gem not found!"
-    echo "🧪 Running Jekyll Doctor..."
-    bundle exec jekyll doctor
-    echo "🏗️ Building site..."
-    bundle exec jekyll build
-  env:
-    JEKYLL_ENV: production
-
+        run: |
+          echo "🔍 Checking installed gems..."
+          bundle info minimal-mistakes-jekyll || echo "⚠️ Minimal Mistakes gem not found!"
+          echo "🧪 Running Jekyll Doctor..."
+          bundle exec jekyll doctor
+          echo "🏗️ Building site..."
+          bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site  # ✅ explicitly upload the built folder
+          path: _site
 
   deploy:
     runs-on: ubuntu-latest
